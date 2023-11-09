@@ -1,0 +1,11 @@
+version: 'LATEST'
+
+services:
+  db:
+    image: mysql
+    environment:
+      MYSQL_ROOT_PASSWORD: example
+  adminer:
+    image: adminer
+    ports:
+      - 8081:8080
